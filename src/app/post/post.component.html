@@ -1,0 +1,30 @@
+<p>post works!</p>
+<form [formGroup]="myForm!" (ngSubmit)="onSubmit(myForm)">
+    <div>
+        <label>
+          Id:
+          <input formControlName="id" placeholder="Your id">
+        </label>
+      </div>
+      <div>
+        <label>
+          UserId:
+          <input formControlName="userId" placeholder="Your message">
+        </label>
+      </div>
+    <div>
+    <div>
+      <label>
+        Title:
+        <input formControlName="title" placeholder="Your name">
+      </label>
+    </div>
+    <label>
+        Description:
+      <textarea formControlName="body">
+      </textarea>
+    </label>
+    </div>
+    
+    <button type="submit">Send</button>
+  </form>
